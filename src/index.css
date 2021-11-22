@@ -1,0 +1,165 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+  background-color: #2A2438;
+}
+
+h1,h2,h3,h4, p {
+  color: #DBD8E3;
+}
+
+a {
+  color: #9ab5dc;
+}
+
+.app {
+  margin: 25px auto;
+  padding-bottom: 20px;
+  background-color: #2A2438;
+  width: 370px;
+  min-height: 667px;
+  height: auto;
+  border-radius: 40px;
+  border: 4px solid #DBD8E3;
+  user-select: none;
+}
+
+header, footer {
+  padding: 0px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header.btn {
+  background-color: #5C5470;
+  border: none;
+  border-radius: 8px;
+  color: #DBD8E3;
+  padding: 10px 28px;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.header.btn:hover {
+  background-color: #DBD8E3;
+  color: #2A2438;
+}
+
+.cutout {
+  width: 180px;
+  height: 30px;
+  background-color:#DBD8E3;
+  border-radius: 0 0 10px 10px;
+  margin: 0 auto;
+}
+
+.tasks {
+  padding: 18px 10px;
+}
+
+.tasks.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px 0;
+  background-color: #5C5470;
+  border-left: 4px solid #5C5470;
+  color: #DBD8E3;
+  cursor: pointer;
+}
+
+.tasks.task:hover {
+  background: #524B64;
+  border-left: 4px solid #DBD8E3;
+}
+
+.task-text {
+  flex: 3;
+  padding-right: 10px;
+  font-size: 1.2rem;
+}
+
+.tasks.task.deadline {
+  padding: 8px;
+  margin: 0 10px;
+  background-color: #352F44;
+  border: none;
+  border-radius: 8px;
+  color: #DBD8E3;
+  font-size: 0.75rem;
+}
+
+.trash {
+  visibility: hidden;
+  cursor: pointer;
+}
+
+.tasks.task:hover > .trash {
+  visibility: visible;;
+}
+
+.tasks.task.reminder {
+  border: 0 4px solid #2A2438;
+  background-color: #DBD8E3;
+  color: #2A2438;
+}
+
+.form-add {
+  color: #DBD8E3;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px 0;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background: #5C5470;
+  border: none;
+  color: #2A2438;
+  text-align: start;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+label {
+  color: #DBD8E3;
+  font-size: 0.8rem;
+}
+
+input::placeholder {
+  color: #2A2438;
+}
+
+input:focus {
+  outline: none;
+  background: #DBD8E3;
+}
+
+input[type='checkbox'] {
+  width:20px;
+  height:20px;
+  margin: 0 0 10px 0;
+  background: #DBD8E3;
+}
+input[type='checkbox']:checked {
+  background: #abd;
+}
